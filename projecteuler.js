@@ -40,14 +40,44 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143 ? */
 
 function largestPrimeF(n) {
-  let factorArr = [];
-  for (let i = 0; i <= n; i++) {
+  let primeArr = [];
+  for (let i = 1; i <= n; i++) {
     if (n % i === 0) {
-      if (i % 1 === 0) {
-      }
+      primeArr.push(i);
     }
   }
-  return factorArr;
+  return primeArr;
 }
 
-console.log(largestPrimeF(600));
+//console.log(largestPrimeF(60));
+
+/* Exercice 3
+ A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+Find the largest palindrome made from the product of two 3-digit numbers.*/
+
+function largestPal() {
+  const pal = [];
+  let e = 0,
+    reverse = [];
+  for (let i = 0; i <= 99; i++) {
+    e = 99 * i;
+    e = e.toString();
+    for (let i = e.length - 1; (i = 0); i--) {
+      reverse.push(i);
+    }
+    reverse.join("");
+  }
+  return reverse;
+}
+
+//console.log(largestPrimeF());
+function ejemplo() {
+  let n = 99 * 2,
+    reverse = [];
+  n = n.toString();
+  for (let i = n.length - 1; i < n.length - 1; i--) {
+    reverse.push(i);
+  }
+  return reverse;
+}
+console.log(ejemplo());
