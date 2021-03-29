@@ -71,13 +71,3 @@ function largestPal() {
 }
 
 //console.log(largestPrimeF());
-function ejemplo() {
-  let n = 99 * 2,
-    reverse = [];
-  n = n.toString();
-  for (let i = n.length - 1; i < n.length - 1; i--) {
-    reverse.push(i);
-  }
-  return reverse;
-}
-console.log(ejemplo());
